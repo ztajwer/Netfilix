@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix-Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href=" assests/tlogo.png" />
+  </head>
+  <body>
+    <!-- navbar and banner start -->
+    <div class="banner">
+      <nav>
+        <img src=" assests/navlogo.png" alt="" />
+        <a href="login.html" class="btn">Sign in</a>
+      </nav>
+      <div class="content">
+        <center>
+          <h1 class="heading">Unlimited movies, TV <br />shows, and more</h1>
+          <h2 class="heading2">Starts at Rs 250. Cancel anytime.</h2>
+          <p>
+            Ready to watch? Enter your email to create or restart your
+            membership.
+          </p>
+          <div class="form-container">
+            <input
+              type="email"
+              class="email-input"
+              placeholder="Email address"
+            />
+            <a href="start.html"
+              ><button class="get-started-btn">Get Started ›</button></a
+            >
+          </div>
+        </center>
+      </div>
+    </div>
+    <!-- navbar and banner end -->
+
+    <div class="cards">
+      <h3>Trending Now</h3>
+      <div class="trending">
+        <center>
+          <div class="slider-container">
+            <!-- Left Arrow -->
+            <button class="arrow arrow-left">&#10094;</button>
+
+            <!-- Slider -->
+            <div class="slider" id="slider">
+              <img
+                src=" assests/t1.jpg"
+                alt="Trending 1"
+                class="timages"
+                onclick="openModal()"
+              />
+              <img
+                src=" assests/t2.jpg"
+                alt="Trending 2"
+                class="timages"
+                onclick="openModal()"
+              />
+              <img
+                src=" assests/t3.jpg"
+                alt="Trending 3"
+                class="timages"
+                onclick="openModal()"
+              />
+              <img
+                src=" assests/t4.jpg"
+                alt="Trending 4"
+                class="timages"
+                onclick="openModal()"
+              />
+              <img
+                src=" assests/t5.jpg"
+                alt="Trending 5"
+                class="timages"
+                onclick="openModal()"
+              />
+              <img
+                src=" assests/t6.webp"
+                alt="Trending 6"
+                class="timages"
+                onclick="openModal()"
+              />
+              <img
+                src=" assests/t7.jpg"
+                alt="Trending 7"
+                class="timages"
+                onclick="openModal()"
+              />
+              <img
+                src=" assests/t8.jpg"
+                alt="Trending 8"
+                class="timages"
+                onclick="openModal()"
+              />
+            </div>
+
+            <!-- Right Arrow -->
+            <button class="arrow arrow-right">&#10095;</button>
+          </div>
+        </center>
+      </div>
+      <h3 class="j">More Reasons to Join</h3>
+      <div class="join">
+        <div class="jc">
+          <h3 class="jch">Enjoy on your TV</h3>
+          <p>
+            Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray
+            players, and more.
+          </p>
+          <div class="icon"><img src=" assests/io.png" alt="" /></div>
+        </div>
+
+        <div class="jc">
+          <h3 class="jch">Download your shows to watch offline</h3>
+          <p>Save your favorites easily and always have something to watch.</p>
+          <div class="icon"><img src=" assests/io2.png" alt="" /></div>
+        </div>
+
+        <div class="jc">
+          <h3 class="jch">Watch everywhere</h3>
+          <p>
+            Stream unlimited movies and TV shows on your phone, tablet, laptop,
+            and TV.
+          </p>
+          <div class="icon"><img src=" assests/io3.png" alt="" /></div>
+        </div>
+
+        <div class="jc">
+          <h3 class="jch">Create profiles for kids</h3>
+          <p>
+            Send kids on adventures with their favorite characters in a space
+            made just for them — free with your membership.
+          </p>
+          <div class="icon"><img src=" assests/io4.png" alt="" /></div>
+        </div>
+      </div>
+    </div>
+    <h3>Frequently Asked Questions</h3>
+    <div class="faq-container">
+      <div class="faq-item">
+        <span>What is Netflix?</span>
+        <span class="icon">+</span>
+      </div>
+      <div class="faq-answer">
+        Netflix is a streaming service that offers a wide variety of
+        award-winning TV shows, movies, anime, documentaries and more.
+      </div>
+
+      <div class="faq-item">
+        <span>How much does Netflix cost?</span>
+        <span class="icon">+</span>
+      </div>
+      <div class="faq-answer">
+        Watch Netflix on your smartphone, tablet, smart TV, laptop or streaming
+        device, all for one fixed monthly fee.
+      </div>
+
+      <div class="faq-item">
+        <span>Where can I watch?</span>
+        <span class="icon">+</span>
+      </div>
+      <div class="faq-answer">
+        You can watch anywhere, anytime, on an unlimited number of devices.
+      </div>
+
+      <div class="faq-item">
+        <span>How do I cancel?</span>
+        <span class="icon">+</span>
+      </div>
+      <div class="faq-answer">
+        Netflix is flexible. There are no contracts and no commitments. You can
+        easily cancel your account online in two clicks.
+      </div>
+
+      <div class="faq-item">
+        <span>What can I watch on Netflix?</span>
+        <span class="icon">+</span>
+      </div>
+      <div class="faq-answer">
+        Netflix has an extensive library of feature films, documentaries, TV
+        shows, anime, and more.
+      </div>
+
+      <div class="faq-item">
+        <span>Is Netflix good for kids?</span>
+        <span class="icon">+</span>
+      </div>
+      <div class="faq-answer">
+        The Netflix Kids experience is included in your membership to give
+        parents control while kids enjoy family-friendly shows and films.
+      </div>
+    </div>
+
+    <!-- subscribe section -->
+    <center>
+      <p>
+        Ready to watch? Enter your email to create or restart your membership.
+      </p>
+    </center>
+    <div class="form-container">
+      <input type="email" class="email-input" placeholder="Email address" />
+      <a href="start.html"><button class="get-started-btn">Get Started ›</button></a>
+    </div>
+
+    <!-- Footer  -->
+    <!-- Netflix Style Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <p class="footer-top">Questions? <a href="#">Contact us.</a></p>
+
+        <div class="footer-links">
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <br />
+            <li><a href="#">Investor Relations</a></li>
+            <br />
+            <li><a href="#">Privacy</a></li>
+            <br />
+            <li><a href="#">Speed Test</a></li>
+            <br />
+          </ul>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <br />
+            <li><a href="#">Jobs</a></li>
+            <br />
+            <li><a href="#">Cookie Preferences</a></li>
+            <br />
+            <li><a href="#">Legal Notices</a></li>
+            <br />
+          </ul>
+          <ul>
+            <li><a href="#">Account</a></li>
+            <br />
+            <li><a href="#">Ways to Watch</a></li>
+            <br />
+            <li><a href="#">Corporate Information</a></li>
+            <br />
+            <li><a href="#">Only on Netflix</a></li>
+            <br />
+          </ul>
+          <ul>
+            <li><a href="#">Media Center</a></li>
+            <br />
+            <li><a href="#">Terms of Use</a></li>
+            <br />
+            <li><a href="#">Contact Us</a></li>
+            <br />
+          </ul>
+        </div>
+
+        <div class="footer-lang">
+          <select>
+            <option>English</option>
+            <option>Urdu</option>
+            <option>Hindi</option>
+          </select>
+        </div>
+
+        <p class="footer-bottom">Netflix Pakistan</p>
+      </div>
+    </footer>
+    <!-- modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <div class="modal-header">
+          <img
+            src=" assests/t1.jpg"
+            alt="Poster"
+            height="500px"
+          />
+        </div>
+        <div class="modal-body">
+          <h2>The Ba***ds of Bollywood</h2>
+          <div class="tags">
+            <span>2025</span>
+            <span>18+</span>
+            <span>Show</span>
+            <span>Comedies</span>
+            <span>Dramas</span>
+          </div>
+          <p>
+            In this high-stakes drama, an ambitious outsider and his friends
+            navigate the chaotic, larger-than-life, yet uncertain world of
+            Bollywood.
+          </p>
+          <a href="#" class="get-started">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
